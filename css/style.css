@@ -1,0 +1,162 @@
+/* Global */
+body {
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 10px;
+    cursor: default;
+}
+
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    color: #777;
+    transition: opacity 0.3s;
+}
+
+a:hover {
+    opacity: 0.5
+}
+
+/* Header */
+#header {
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#dek {
+    font-size: 1rem;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Controls */
+#controls {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Menu */
+.menu {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.menu .items {
+    display: flex;
+}
+
+.menu .item {
+    padding: 0 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.menu .item .label {
+    font-size: 1rem;
+    padding-left: 0.2rem;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.menu .item.selected .label, .menu .item:hover .label {
+    opacity: 1;
+}
+
+/* Legend */
+.legend circle {
+    stroke: #aaa;
+    fill: none;
+}
+
+.legend text {
+    fill: white;
+    text-anchor: middle;
+	dominant-baseline: middle;
+}
+
+/* Circles */
+circle.renewable {
+    fill: none;
+    stroke: #8bbe1b;
+    stroke-width: 2;
+}
+
+circle.oilgascoal {
+    fill: none;
+    stroke: #696969;
+    stroke-width: 1.25;
+}
+
+circle.hydroelectric {
+    fill: none;
+    stroke: #00b7eb;
+    stroke-width: 1.5;
+    stroke-dasharray: 3,2;
+}
+
+circle.nuclear {
+    fill: none;
+    stroke: #fc5a8d;
+    stroke-width: 1.5;
+    stroke-dasharray: 5,2;
+}
+
+/* Chart */
+.country {
+    pointer-events: all;
+}
+
+.country .label {
+    text-anchor: middle;
+    font-size: 0.75rem;
+    fill: white;
+    letter-spacing: 0.02rem;
+    transition: fill 0.3s;
+}
+
+.country:hover .label {
+    fill: white;
+}
+
+/* Footer */
+#footer {
+    padding: 1rem 1rem 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Popup */
+.popup-center {
+	opacity: 0;
+}
+
+.flourish-popup {
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+.flourish-popup-content {
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.flourish-popup-content h3 {
+    text-align: center;
+    margin: 0.25rem 0;
+}
+
