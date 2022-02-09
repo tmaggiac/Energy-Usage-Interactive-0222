@@ -1,3 +1,12 @@
+const el = document.querySelector("#controls")
+    const observer = new IntersectionObserver(([e]) => {
+        e.target.classList.toggle("is-pinned", e.intersectionRatio < 1 && e.boundingClientRect.top <= 1)
+    },
+        { threshold: [1] }
+    );
+
+    observer.observe(el);
+
 function sortAccessor(d) {
     var value = d[state.selectedIndicator];
     if(value === null) value = 0;
