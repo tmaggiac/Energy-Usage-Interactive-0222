@@ -93,8 +93,8 @@ function update() {
     updateLegend();
 }
 
-//var svgEl = document.getElementById('#chart-wrapper'),
-//    bb = svgEl.getBBox();
-//    svgEl.style.height = bb.y + bb.height;
-//    svgEl.style.width = bb.x + bb.width;
-//    console.log("test height");
+var svgEl = document.getElementById('#chart-wrapper'),
+    bb = svgEl.getBBox();
+    svgEl.style.height = bb.y + bb.height;
+    svgEl.style.width = bb.x + bb.width;
+    console.log("test height");
