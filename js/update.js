@@ -80,6 +80,18 @@ function updateChart() {
         })
         .join('g')
         .each(updateGroup);
+    
+    var chartEl = d3.select('#chart').node(),
+        bb = chartEl.getBBox();
+        chartEl.style.height = bb.y + bb.height;
+        chartEl.style.width = bb.x + bb.width;
+        console.log(chartEl);
+    
+    var svgEl = d3.select('svg', "#chart-wrapper").node(),
+        box = svgEl.getBBox();
+//        return box
+        console.log(svgEl);
+    
 }
 
 function updateLegend() {
@@ -93,8 +105,4 @@ function update() {
     updateLegend();
 }
 
-var svgEl = document.getElementById('#chart-wrapper'),
-    bb = svgEl.getBBox();
-    svgEl.style.height = bb.y + bb.height;
-    svgEl.style.width = bb.x + bb.width;
-    console.log("test height");
+
